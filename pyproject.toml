@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "internship-document-extractor"
+version = "0.1.0"
+description = "A strict JSON invoice and resume analysis CLI"
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2.7,<3",
+  "python-dotenv>=1.0,<2",
+  "openai>=1.40,<2",
+  "google-genai>=1.0,<2",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+document-extractor = "internship_extractor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+

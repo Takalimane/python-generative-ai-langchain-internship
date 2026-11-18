@@ -1,0 +1,13 @@
+INVOICE INV-2026-0042
+Date: 2026-04-10
+Due: 2026-05-10
+From: Northwind Supplies
+Bill to: Contoso Labs
+Currency: USD
+
+1 x Analytics API integration - 1200.00
+2 x Technical support - 150.00
+Subtotal: 1500.00
+Tax: 150.00
+Total: 1650.00
+
